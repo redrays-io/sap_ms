@@ -25,8 +25,8 @@ from pysap.SAPMS import ms_client_status_values,ms_opcode_error_values
 from pysap.SAPMS import ms_adm_opcode_values,ms_adm_rzl_strg_type_values
 from scapy.supersocket import StreamSocket
 from scapy.utils import hexdump,inet_ntoa,inet_aton
-from scapy.packet import bind_layers
-from scapy.layers.inet import TCP,Raw
+from scapy.packet import bind_layers, Raw
+from scapy.layers.inet import TCP
 from scapy.config import conf
 from ansicolor import red,green,blue,yellow,cyan,magenta
 from pprint import pprint
@@ -37,6 +37,7 @@ import struct
 import random
 import time
 import os
+from sap_ms_betrusted import ms_adm_nilist
 
 help_desc = '''
 SAP Message Server monitor text/integer-storage

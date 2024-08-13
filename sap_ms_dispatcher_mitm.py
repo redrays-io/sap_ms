@@ -28,8 +28,8 @@ from pysap.SAPDiagItems import *
 from scapy.supersocket import StreamSocket
 from scapy.sendrecv import sniff
 from scapy.utils import hexdump,inet_ntoa,inet_aton
-from scapy.packet import bind_layers
-from scapy.layers.inet import TCP,Raw
+from scapy.packet import bind_layers, Raw
+from scapy.layers.inet import TCP
 from scapy.config import conf
 from ansicolor import red,green,blue,yellow,cyan,magenta
 from pprint import pprint
